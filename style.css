@@ -11,14 +11,19 @@ body {
   display: flex;
   justify-content: space-between;
   background: #111721;
-  padding: 10px 100px;
+  padding: 10px 5%;
 }
 .navbar .first-section {
   display: flex;
   align-items: center;
+  width: 30%;
+}
+.navbar .first-section .navbar-brand {
+  margin-right: 40px;
 }
 .navbar .first-section ul {
   margin: 0;
+  padding: 0;
   display: flex;
   align-content: center;
 }
@@ -46,8 +51,14 @@ body {
 .navbar .first-section ul li:not(:last-child) {
   margin-right: 12px;
 }
+.navbar .second-section {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
 .navbar .second-section ul {
   margin: 0;
+  padding: 0;
   display: flex;
   align-content: center;
 }
@@ -62,10 +73,13 @@ body {
 }
 .navbar .third-section {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
+  width: 30%;
 }
 .navbar .third-section ul {
   margin: 0;
+  padding: 0;
   display: flex;
   align-content: center;
 }
