@@ -177,7 +177,7 @@ body {
 }
 .live-section__type-section label {
   color: white;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 600;
 }
 .live-section__type-section .letters {
@@ -187,7 +187,7 @@ body {
 .live-section__type-section .letters .letter {
   background: black;
   padding: 10px 20px;
-  font-size: 40px;
+  font-size: 55px;
   font-weight: 900;
   color: white;
 }
@@ -203,6 +203,42 @@ body {
   bottom: 50px;
   right: 5%;
   z-index: 2;
+}
+
+.live-info {
+  display: flex;
+  color: #FFFFFF;
+  padding: 20px 0;
+  border-bottom: 1px solid #57575f;
+}
+.live-info__details {
+  width: 45%;
+  padding: 10px 50px 15px 10px;
+}
+.live-info__details .title {
+  font-size: 25px;
+}
+.live-info__details .actions {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.live-info__details .actions label {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.live-info__details .actions label img {
+  margin-right: 10px;
+}
+.live-info__details .actions label:not(:last-child) {
+  margin-right: 25px;
+}
+.live-info__details .actions label:hover {
+  cursor: pointer;
+}
+.live-info__product {
+  width: 55%;
 }
 
 /*# sourceMappingURL=style.css.map */
