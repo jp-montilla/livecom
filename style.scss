@@ -192,9 +192,11 @@ body{
 			color: white;
 			font-size: 30px;
 			font-weight: 600;
+
 		}
 		.letters{
 			display: flex;
+			margin-top: 10px;
 			.letter{
 				background: black;
 				padding: 10px 20px;
@@ -224,16 +226,3 @@ body{
 
 
 
-
-
-h1{
-  font-size: 50px;
-  line-height: 100px;
-  padding-left: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.ost-multi-header {
-  position: relative;
-  height: 100px;
-  background: #999999;
-}
