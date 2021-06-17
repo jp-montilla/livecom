@@ -1,3 +1,5 @@
+@import 'variables';
+
 @mixin ul-default {
 	margin: 0;
 	padding: 0;
@@ -12,22 +14,23 @@
     align-items: center;
 }
 
-body{
-	margin: 0;
-	padding: 0;
-}
-
 .hover{
 	&:hover{
 		cursor: pointer;
 	}
 }
 
+body{
+	margin: 0;
+	padding: 0;
+	background: $bg_grey;
+	font-family: 'Montserrat', sans-serif;
+}
+
 .navbar{
 	display: flex;
 	justify-content: space-between;
-	background: #111721;
-	// padding: 10px 100px;
+	background: $dark_grey;
 	padding: 10px 5%;
 
 	.first-section{
@@ -104,7 +107,133 @@ body{
 			}
 		}
 	}
+}
 
-	
+.main-content{
+	width: 88%;
+	display: block;
+	margin: 30px auto;
+}
 
+.column-1{
+	width: 67%;
+}
+
+.live-section{
+	position: relative;
+	height: auto;
+	.section-bg{
+		border-radius: 25px;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+	}
+
+	&__live-icon{
+		position: absolute;
+		top: 20px;
+    	left: 2%;
+		display: flex;
+		z-index: 2;
+		font-size: 15px;
+		font-weight: 500;
+		.status{
+			padding: 5px 10px;
+			border-radius: 10px;
+			background: $red;
+			color: white;
+			
+		}
+		.viewer{
+			margin-left: 10px;
+			display: flex;
+			padding: 5px 10px;
+			border-radius: 10px;
+			background: $viewer_bg;
+			color: white;
+			span{
+				margin-left: 5px;
+			}
+		}
+	}
+
+	&__stream-info{
+		position: absolute;
+		top: 20px;
+    	right: 2%;
+		display: flex;
+		z-index: 2;
+		font-size: 18px;
+		color: white;
+		font-weight: 600;
+		label{
+			display: flex;
+			align-content: center;
+			align-items: center;
+			span{
+				margin-right: 5px;
+			}
+			img{
+				margin-top: 3px;
+			}
+			&:hover{
+				cursor: pointer;
+			}
+		}
+	}
+
+	&__type-section{
+		position: absolute;
+		bottom: 50px;
+    	left: 5%;
+		z-index: 2;
+		label{
+			color: white;
+			font-size: 30px;
+			font-weight: 600;
+		}
+		.letters{
+			display: flex;
+			.letter{
+				background: black;
+				padding: 10px 20px;
+				font-size: 40px;
+				font-weight: 900;
+				color: white;
+
+				&:not(:last-child){
+					margin-right: 4px;
+				}
+			}
+			.letter-active{
+				background: $yellow_bid;
+				color: black;
+			}
+		}
+	}
+
+	&_time-left{
+		position: absolute;
+		bottom: 50px;
+    	right: 5%;
+		z-index: 2;
+	}
+}
+
+
+
+
+
+
+h1{
+  font-size: 50px;
+  line-height: 100px;
+  padding-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ost-multi-header {
+  position: relative;
+  height: 100px;
+  background: #999999;
 }

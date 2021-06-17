@@ -1,10 +1,12 @@
+.hover:hover {
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   padding: 0;
-}
-
-.hover:hover {
-  cursor: pointer;
+  background: #1B212D;
+  font-family: "Montserrat", sans-serif;
 }
 
 .navbar {
@@ -94,6 +96,125 @@ body {
 }
 .navbar .third-section ul li .profile {
   margin-top: 5px;
+}
+
+.main-content {
+  width: 88%;
+  display: block;
+  margin: 30px auto;
+}
+
+.column-1 {
+  width: 67%;
+}
+
+.live-section {
+  position: relative;
+  height: auto;
+}
+.live-section .section-bg {
+  border-radius: 25px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.live-section__live-icon {
+  position: absolute;
+  top: 20px;
+  left: 2%;
+  display: flex;
+  z-index: 2;
+  font-size: 15px;
+  font-weight: 500;
+}
+.live-section__live-icon .status {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: #DE1F26;
+  color: white;
+}
+.live-section__live-icon .viewer {
+  margin-left: 10px;
+  display: flex;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: #697172;
+  color: white;
+}
+.live-section__live-icon .viewer span {
+  margin-left: 5px;
+}
+.live-section__stream-info {
+  position: absolute;
+  top: 20px;
+  right: 2%;
+  display: flex;
+  z-index: 2;
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+}
+.live-section__stream-info label {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.live-section__stream-info label span {
+  margin-right: 5px;
+}
+.live-section__stream-info label img {
+  margin-top: 3px;
+}
+.live-section__stream-info label:hover {
+  cursor: pointer;
+}
+.live-section__type-section {
+  position: absolute;
+  bottom: 50px;
+  left: 5%;
+  z-index: 2;
+}
+.live-section__type-section label {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+.live-section__type-section .letters {
+  display: flex;
+}
+.live-section__type-section .letters .letter {
+  background: black;
+  padding: 10px 20px;
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+}
+.live-section__type-section .letters .letter:not(:last-child) {
+  margin-right: 4px;
+}
+.live-section__type-section .letters .letter-active {
+  background: #FCCF37;
+  color: black;
+}
+.live-section_time-left {
+  position: absolute;
+  bottom: 50px;
+  right: 5%;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 100px;
+  padding-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ost-multi-header {
+  position: relative;
+  height: 100px;
+  background: #999999;
 }
 
 /*# sourceMappingURL=style.css.map */
