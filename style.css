@@ -1,8 +1,85 @@
 body {
-  background: url("images/line_bg.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+.hover:hover {
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #111721;
+  padding: 10px 100px;
+}
+.navbar .first-section {
+  display: flex;
+  align-items: center;
+}
+.navbar .first-section ul {
+  margin: 0;
+  display: flex;
+  align-content: center;
+}
+.navbar .first-section ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar .first-section ul li a {
+  color: #57586F;
+  text-decoration: none;
+  font-size: 16px;
+}
+.navbar .first-section ul li a:hover {
+  cursor: pointer;
+}
+.navbar .first-section ul li:hover {
+  cursor: context-menu;
+}
+.navbar .first-section ul li:first-child a {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.navbar .first-section ul li:not(:last-child) {
+  margin-right: 12px;
+}
+.navbar .second-section ul {
+  margin: 0;
+  display: flex;
+  align-content: center;
+}
+.navbar .second-section ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar .second-section ul li:not(:last-child) {
+  margin-right: 25px;
+}
+.navbar .third-section {
+  display: flex;
+  align-items: center;
+}
+.navbar .third-section ul {
+  margin: 0;
+  display: flex;
+  align-content: center;
+}
+.navbar .third-section ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar .third-section ul li:not(:last-child) {
+  margin-right: 15px;
+}
+.navbar .third-section ul li .profile {
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
