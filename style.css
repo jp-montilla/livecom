@@ -269,6 +269,9 @@ body {
   z-index: 2;
   width: 20px;
 }
+.live-info__product .arrow-up:hover {
+  cursor: pointer;
+}
 .live-info__product .item {
   display: flex;
   flex-direction: column;
