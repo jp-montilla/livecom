@@ -392,12 +392,16 @@ body {
   padding: 20px 25px;
   overflow: hidden;
   position: relative;
+  margin-bottom: 30px;
 }
 .column-2 .live-chat .arrow-down {
   position: absolute;
   top: 20px;
   right: 20px;
   width: 30px;
+}
+.column-2 .live-chat .arrow-down:hover {
+  cursor: pointer;
 }
 .column-2 .live-chat .header {
   color: #57586F;
@@ -453,6 +457,91 @@ body {
 }
 .column-2 .live-chat .chat button:hover {
   cursor: pointer;
+}
+.column-2 .bid {
+  border-radius: 16px;
+  background: #252C39;
+  filter: drop-shadow(0px 12px 15px rgba(17, 23, 33, 0.7));
+  position: relative;
+}
+.column-2 .bid .arrow-down {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+}
+.column-2 .bid .arrow-down:hover {
+  cursor: pointer;
+}
+.column-2 .bid .header {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 10px 40px;
+}
+.column-2 .bid .header img {
+  margin-right: 30px;
+  height: 40px;
+}
+.column-2 .bid .profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #21D3B6;
+  font-weight: 600;
+  background: #1B212D;
+  padding: 5px 20px;
+}
+.column-2 .bid .profile__info {
+  display: flex;
+  align-items: center;
+}
+.column-2 .bid .profile__info img {
+  height: 60px;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+.column-2 .bid .profile__token {
+  display: flex;
+  align-items: center;
+}
+.column-2 .bid .profile__token img {
+  height: 50px;
+  margin-left: 15px;
+}
+.column-2 .bid .bid-list {
+  padding: 20px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.column-2 .bid .bid-list .bidders {
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 400px;
+}
+.column-2 .bid .bid-list .bidders .bid-top {
+  color: #FCCF37;
+}
+.column-2 .bid .bid-list .bidders .bid-self {
+  color: #21D3B6;
+}
+.column-2 .bid .bid-list .bidders .bidder {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.column-2 .bid .bid-list .bidders .bidder div {
+  display: flex;
+}
+.column-2 .bid .bid-list .bidders .bidder div label:first-child {
+  margin-right: 60px;
+}
+.column-2 .bid .bid-list .bidders .bidder label {
+  margin-right: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

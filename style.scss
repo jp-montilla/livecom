@@ -426,11 +426,16 @@ body{
 		padding: 20px 25px;
 		overflow: hidden;
 		position: relative;
+		margin-bottom: 30px;
 		.arrow-down{
 			position: absolute;
 			top: 20px;
 			right: 20px;
 			width: 30px;
+
+			&:hover{
+				cursor: pointer;
+			}
 		}
 
 		.header{
@@ -489,6 +494,93 @@ body{
 				}
 				&:hover{
 					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	.bid{
+		border-radius: 16px;
+		background: $item_bg;
+		filter: $drop-shadow;
+		position: relative;
+		.arrow-down{
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			width: 30px;
+			&:hover{
+				cursor: pointer;
+			}
+		}
+		.header{
+			display: flex;
+			align-items: center;
+			color: white;
+			padding: 10px 40px;
+			img{
+				margin-right: 30px;
+				height: 40px;
+			}
+		}
+		.profile{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			color: $light_teal;
+			font-weight: 600;
+			background: $bg_grey;
+			padding: 5px 20px;
+			&__info{
+				display: flex;
+				align-items: center;
+				img{
+					height: 60px;
+					margin-top: 10px;
+					margin-right: 15px;
+				}
+			}
+			&__token{
+				display: flex;
+				align-items: center;
+				img{
+					height: 50px;
+					margin-left: 15px;
+				}
+			}
+		}
+
+		.bid-list{
+			padding: 20px;
+			font-weight: 600;
+			font-size: 16px;
+			.bidders{
+				display: flex;
+				flex-direction: column;
+				color: $white;
+				overflow-x: hidden;
+				overflow-y: auto;
+				max-height: 400px;
+				.bid-top{
+					color: $yellow_bid;
+				}
+				.bid-self{
+					color: $light_teal;
+				}
+				.bidder{
+					display: flex;
+					justify-content: space-between;
+					width: 100%;
+					padding-bottom: 20px;
+					div{
+						display: flex;
+						label:first-child{
+							margin-right: 60px;
+						}
+					}
+					label{
+						margin-right: 30px;
+					}
 				}
 			}
 		}
