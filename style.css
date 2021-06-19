@@ -121,6 +121,9 @@ body {
 .navbar .first-section .navbar-brand {
   margin-right: 40px;
 }
+.navbar .first-section .navbar-brand img {
+  height: 30px;
+}
 .navbar .first-section ul {
   margin: 0;
   padding: 0;
@@ -557,6 +560,9 @@ body {
 }
 .column-1 .seller-info .seller-container .info-container .title button:hover {
   cursor: pointer;
+}
+.column-1 .seller-info .seller-container .info-container .title .follow-mobile {
+  display: none;
 }
 .column-1 .seller-info .seller-container .info-container .desc {
   font-size: 15px;

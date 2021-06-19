@@ -5,5 +5,7 @@ $(document).ready(function(){
 
 		$('.sub-menu').toggleClass('swing-out-top-bck');
 		$('.sub-menu').toggleClass('swing-in-top-fwd');
+
+		$('.column-2 > .bid').toggleClass('shown-drop');
 	});
 });

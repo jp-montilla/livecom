@@ -4,6 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Livecom</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="responsiveness.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -80,10 +81,10 @@
 				<div class="live-info__details">
 					<label class="title">Live Show Name can potentially be this long and can provide details</label>
 					<div class="actions">
-						<label><img src="images/first/clap.svg" alt=""><span>7.7k</span></label>
+						<label><img class="clap" src="images/first/clap.svg" alt=""><span class="clap-count">7.7k</span></label>
 						<label><img class="card" src="images/first/card.svg" alt=""></label>
-						<label><img src="images/first/share.svg" alt=""><span>SHARE</span></label>
-						<label><img src="images/first/more.svg" alt=""></label>
+						<label class="hide-mobile"><img src="images/first/share.svg" alt=""><span>SHARE</span></label>
+						<label class="hide-mobile"><img src="images/first/more.svg" alt=""></label>
 
 					</div>
 				</div>
@@ -155,9 +156,10 @@
 								<label>0 Followers</label>
 							</div>
 							<button>
-								<img src="images/first/follow.svg" alt="">
+								<img class="follow-img" src="images/first/follow.svg" alt="">
 								<label for="">Follow</label>
 							</button>
+							<img class="follow-mobile" src="images/first/follow.svg" alt="">
 						</div>
 						<div class="desc">
 							<label>Welcome to my channel! :) I sell B, A, variety games, chat & eat a ton of food on stream P: I love interacting with my chat & making others happy, so come say hi!</label>
@@ -189,7 +191,7 @@
 				</div>
 			</section>
 
-			<section class="bid">
+			<section class="bid shown-drop">
 				<img class="arrow-down" src="images/second/arrow-down-white.svg" alt="">
 				<div class="header">
 					<img src="images/second/bolt.svg" alt="">
