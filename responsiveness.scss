@@ -111,6 +111,9 @@
 
 
 @media only screen and (max-width: 600px) {
+	body{
+		background: $item_bg;
+	}
 	.navbar{
 		display: none;
 	}
@@ -256,6 +259,7 @@
 								color: $light_grey;
 							}
 							.top-up{
+								margin-top: 0;
 								input, button{
 								    width: 120px;
 								    height: 40px;
@@ -276,6 +280,7 @@
 			.seller-info{
 				border: none;
 				margin-bottom: 0;
+				height: 0;
 				.seller-container{
 					padding: 0;
 					.profile{
@@ -319,46 +324,229 @@
 			.live-chat{
 				display: none;
 			}
+			.profile{
+				padding: 5px 10px;
+				&__info{
+					img{
+						height: 50px;
+					}
+				}
+				&__token{
+					img{
+						height: 40px;
+						margin-left: 5px;
+					}
+				}
+			}
 			.bid{
 				width: 90%;
 			    display: block;
-			    margin: -125% auto 0 auto;
+			    margin: -115% auto 0 auto;
 				.bid-list{
+    				font-size: 14px;
 					.bidders{
 						max-height: 100px;
+						.bidder{
+							div{
+								label:first-child{
+									margin-right: 40px;
+								}
+							}
+						}
 					}
 				}
 			}
 			.shown-drop{
-				margin: -125% auto 130% auto !important;
+				margin: -115% auto 130% auto !important;
 			}
 		}
 	}
 }
 
 @media only screen and (max-width: 415px) {
-	.main-content .column-1 .live-info .wrapper{
-		margin-top: 95%;
-	}
-	.main-content .column-2 .shown-drop{
-		margin: -125% auto 110% auto !important;
-	}
-	.column-2 .bid .profile{
-		font-size: 15px;
-	}
-	.main-content .column-2 .bid .bid-list .bidders{
-		font-size: 15px;
-	}
-	.main-content .column-1 .live-info .wrapper .sub-menu .price{
-		padding: 20px;
+	.main-content{
+		.column-1{
+			.live-section{
+				&_time-left{
+					#time-left{
+    					width: 150px;
+					}
+				}
+			}
+			.live-info{
+				padding-bottom: 0;
+				.wrapper{
+					margin-top: 80%;
+					.product{
+						.arrow-up{
+							z-index: 7;
+						}
+					}
+					.sub-menu{
+						.price{
+							padding: 20px;
+						}
+					}
+				}
+			}
+		}
+		.column-2{
+			.bid{
+				margin: -90% auto 0 auto !important;
+				.header{
+					padding: 10px 30px;
+					img{
+						height: 30px;
+					}
+					label{
+						font-size: 14px;
+					}
+				}
+				.profile{
+					font-size: 15px;
+				}
+				.bid-list{
+					.bidders{
+						font-size: 15px;
+					}
+				}
+			}
+			.shown-drop{
+				margin: -90% auto 80% auto !important;
+			}
+		}
 	}
 
 }
 
 
 @media only screen and (max-width: 375px) {
-	.main-content .column-2 .shown-drop{
-		margin: -130% auto 110% auto !important;
+	.main-content{
+		.column-1{
+			.live-info{
+				.wrapper{
+					margin-top: 85%;
+				}
+			}
+		}
+		.column-2{
+			.bid{
+				margin: -100% auto 0 auto !important;
+			}
+			.shown-drop{
+				margin: -100% auto 90% auto !important;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.main-content{
+		.column-1{
+			.live-section{
+				&_time-left{
+					#time-left{
+						width: 140px;
+					}
+				}
+			}
+			.live-info{
+				padding-bottom: 0;
+				.wrapper{
+					margin-top: 95%;
+					.product{
+						.item{
+							.bid{
+								font-size: 14px;
+								.bid-list{
+									.bidders{
+										font-size: 14px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.column-2{
+			.bid{
+				margin: -105% auto 0 auto !important;
+				.arrow-down{
+					width: 20px;
+				}
+			}
+			.shown-drop{
+				margin: -105% auto 92% auto !important
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width: 320px) {
+	.main-content{
+		.column-1{
+			.live-section{
+				&_time-left{
+					#time-left{
+						width: 120px;
+					}
+				}
+			}
+			.live-info{
+				.wrapper{
+					margin-top: 95%;
+					.product{
+						.item{
+							.bolt{
+								height: 30px;
+							}
+							.bid{
+								font-size: 12px;
+							}
+						}
+						.last-item{
+							.title, .desc{
+								font-size: 12px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.column-2{
+			.bid{
+				width: 95%;
+				margin: -110% auto 0 auto !important;
+				.arrow-down{
+					width: 18px;
+				}
+				.profile{
+					font-size: 13px;
+					padding: 5px 10px;
+					&__info{
+						img{
+							height: 50px;
+						}
+					}
+					&__token{
+						img{
+							height: 40px;
+    						margin-left: 5px;
+						}
+					}
+				}
+				.bid-list{
+					.bidders{
+						font-size: 13px;
+					}
+				}
+			}
+			.shown-drop{
+				margin: -110% auto 105% auto !important;
+			}
+		}
 	}
 }
 
