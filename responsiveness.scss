@@ -1,5 +1,9 @@
 @import 'variables';
 
+.chat-mobile{
+	display: none;
+}
+
 @media only screen and (max-width: 1780px) {
 	.column-1{
 		.live-section{
@@ -355,9 +359,70 @@
 						}
 					}
 				}
+				.arrow-down{
+					width: 20px;
+				}
 			}
 			.shown-drop{
 				margin: -115% auto 130% auto !important;
+			}
+		}
+	}
+
+	.chat-mobile{
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 4%;
+		.chat-preview{
+			background: rgba(0, 0, 0, 0.5);
+			border-radius: 35px;
+			display: flex;
+			padding: 7px 30px 7px 7px;
+			width: 170px;
+			margin-bottom: 10px;
+			img{
+				height: 40px;
+				padding-right: 10px;
+			}
+			.chat-text{
+				display: flex;
+				flex-direction: column;
+				.name{
+					color: rgba(255, 255, 255, 0.5);
+					font-size: 13px;
+    				padding-bottom: 5px;
+				}
+				.context{
+					color: $white;
+					font-size: 15px;
+				}
+			}
+		}
+
+		#input_container {
+		    position:relative;
+		    width: 230px;
+		    margin-bottom: 10px;
+			#input {
+			    margin:0;
+			    padding: 0 30px;
+			    width: 100%;
+			    background: $dark_grey;
+			    box-shadow: inset 0.70248px 0.70248px 1.40496px rgba(0, 0, 0, 0.25);
+				border-radius: 5.61984px;
+			    color: $light_grey;
+			    font-size: 15px;
+			    height: 38px;
+			    border: none;
+			    outline: none;
+			}
+			#input_img {
+			    position:absolute;
+			    bottom: 6px;
+    			right: 10px;
+			    width:24px;
+			    height:24px;
 			}
 		}
 	}
